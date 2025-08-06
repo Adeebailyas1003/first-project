@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- User Info Display -->
+        <div class="user-info-section" id="userInfoSection">
+            <div class="user-name-display" id="userNameDisplay"></div>
+            <div class="user-course-display" id="userCourseDisplay"></div>
+        </div>
+
+        <div class="form-container">
+            <h1 class="line-animation">
+                <span class="letter" data-letter="R">R</span>
+                <span class="letter" data-letter="e">e</span>
+                <span class="letter" data-letter="g">g</span>
+                <span class="letter" data-letter="i">i</span>
+                <span class="letter" data-letter="s">s</span>
+                <span class="letter" data-letter="t">t</span>
+                <span class="letter" data-letter="r">r</span>
+                <span class="letter" data-letter="a">a</span>
+                <span class="letter" data-letter="t">t</span>
+                <span class="letter" data-letter="i">i</span>
+                <span class="letter" data-letter="o">o</span>
+                <span class="letter" data-letter="n">n</span>
+                <span class="letter space" data-letter=" ">&nbsp;</span>
+                <span class="letter" data-letter="F">F</span>
+                <span class="letter" data-letter="o">o</span>
+                <span class="letter" data-letter="r">r</span>
+                <span class="letter" data-letter="m">m</span>
+            </h1>
+            <form class="registration-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fatherName">Father's Name *</label>
+                    <input type="text" id="fatherName" name="fatherName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course Enrollment *</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="mobile-development">Mobile Development</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="artificial-intelligence">Artificial Intelligence</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="business-administration">Business Administration</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="applyDate">Date of Application *</label>
+                    <input type="date" id="applyDate" name="applyDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="education">Highest Education</label>
+                    <select id="education" name="education">
+                        <option value="">Select education level</option>
+                        <option value="high-school">High School</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="phd">PhD</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the terms and conditions *
+                    </label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="newsletter">
+                        <span class="checkmark"></span>
+                        Subscribe to newsletter for updates
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit Registration</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
